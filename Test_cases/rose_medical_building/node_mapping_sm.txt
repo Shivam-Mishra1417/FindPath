@@ -1,0 +1,15 @@
+0,Main entrance
+1,Exam room 1
+2,Exam room 2
+3,Lab 1 / Dr. office 2
+4,Exam room 3
+5,Exam room 4
+6,Exam room 5
+7,Washroom / Drug closet
+8,Exam room 6
+9,Kitchen
+10,Dr. Office 1 / Storage
+11,Dining area
+12,Reports area
+13,Walk-in washroom
+14,Waiting area

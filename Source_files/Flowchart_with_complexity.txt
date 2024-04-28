@@ -1,0 +1,16 @@
+Flowchart - 
+
+Take input in text format
+Reading graph from text to arraylist using String- O(V + 4E) 
+
+Printing the taken graph - O(V + E)
+
+DFS traversal of undirected graph (assign direction to nodes : parent to child direction)- O(V)
+
+Removing duplicate entries to get the exact no of edges - O(V + E)
+
+Assign direction to the remaining edges (not in the DFS tree 
+:for direction refer the DFS tree and assign in child to parent direction) - O(V + V*E)
+
+Checking if digraph is strongly connected (by doing dfs twice from the root node,
+once with the assigned direction and then with reversed direction of edges)- O(2*V + V^2)

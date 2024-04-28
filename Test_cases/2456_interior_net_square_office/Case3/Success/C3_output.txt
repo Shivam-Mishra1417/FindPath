@@ -1,0 +1,109 @@
+The number of nodes are 15
+Case 1 - Graph is: 
+0 is connected to 1
+0 is connected to 13
+1 is connected to 0
+1 is connected to 2
+2 is connected to 1
+2 is connected to 3
+2 is connected to 14
+3 is connected to 2
+3 is connected to 4
+3 is connected to 14
+4 is connected to 3
+4 is connected to 5
+4 is connected to 9
+5 is connected to 4
+5 is connected to 6
+5 is connected to 7
+5 is connected to 9
+6 is connected to 5
+6 is connected to 7
+7 is connected to 5
+7 is connected to 6
+7 is connected to 8
+8 is connected to 7
+8 is connected to 9
+9 is connected to 4
+9 is connected to 5
+9 is connected to 8
+9 is connected to 10
+10 is connected to 9
+10 is connected to 11
+10 is connected to 14
+11 is connected to 10
+11 is connected to 12
+11 is connected to 14
+12 is connected to 11
+12 is connected to 13
+13 is connected to 0
+13 is connected to 12
+14 is connected to 2
+14 is connected to 3
+14 is connected to 10
+14 is connected to 11
+
+Graph is feasible for orientation
+called for node 0
+called for node 1
+called for node 2
+called for node 3
+called for node 4
+called for node 5
+called for node 6
+called for node 7
+called for node 8
+called for node 9
+called for node 10
+called for node 11
+called for node 12
+called for node 13
+called for node 14
+loop1 - 14  loop2 - 28 loop3- 15  loop4 11  loop518
+
+Green Path
+0 -> 1
+1 -> 2
+2 -> 3
+3 -> 4
+4 -> 5
+5 -> 6
+6 -> 7
+7 -> 5
+7 -> 8
+8 -> 9
+9 -> 4
+9 -> 5
+9 -> 10
+10 -> 11
+11 -> 12
+11 -> 14
+12 -> 13
+13 -> 0
+14 -> 2
+14 -> 3
+14 -> 10
+Red Paths
+0 -> 1
+1 -> 2
+2 -> 3
+3 -> 4
+4 -> 5
+5 -> 6
+6 -> 7
+7 -> 5
+7 -> 8
+8 -> 9
+9 -> 4
+9 -> 5
+9 -> 10
+10 -> 11
+11 -> 12
+11 -> 14
+12 -> 13
+13 -> 0
+14 -> 2
+14 -> 3
+14 -> 10
+
+Orientation - Successful

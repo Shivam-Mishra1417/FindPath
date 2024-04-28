@@ -1,0 +1,84 @@
+Case -2d
+
+DFS_traversal(s,G,bool){
+s-> start node
+G-> Graph using adjacency list G(V,E,T) where V - Vertices, E - Edges, T - No of lanes between 2 node
+bool-> Traversing for assigning direction or check if assigned direction is right or not
+G' -> Directed/Oriented graph
+total_nodes <- size(G)
+visited[total_nodes], parent[total_nodes]
+for(i:visited) do
+ visited[i] <- false
+end for
+Traverse(s,visited,G,bool)
+}
+
+Traverse_and_update(s, visited, G, bool){
+
+    visited[s]<- true
+    for all u in Adj[s] do
+    if(!visited[u]) then
+      if(bool) then
+        Assign direction s to u in G'
+      end if
+      Parent[u]<-s
+      Traverse_and_update(u,visited,G,bool)    
+    else then
+       if(bool) && (!checkDirectionAssigned(s,u,t)) then
+       Assign direction s to u
+    end if   
+
+}
+
+boolean checkDirectionAssigned(s,u,t){
+    
+    for all p in Adj[s] in G' do
+      if (p = u ) then
+       result1 <- true
+    
+    for all q in Adj[u] G' do
+       if (q = s) then
+       result2 <- true
+    
+    if (t > 1) then
+        if(!result1) then
+        assign direction from s to u in G'
+        end if
+
+        if(!result2) then
+        assign direction from u to s in G'
+        end if
+        return true
+    end if
+
+return resul1 || result2
+}
+
+// To check if graph is strongly connected or not after orientation
+//Using Kosaraju Algorithm
+
+boolean checkStronglyConnected(G){
+G-> Directed graph
+
+root<-0
+bool1 <- DFS_traversal(root, G,false)
+if(bool1) then
+    G'<- reverseGraph(G)
+    bool2 <- DFS_traversal(root, G', false)
+    if(bool2)
+    return true
+    end if
+else
+return false
+}
+
+Graph reverseGraph(G){
+
+    V<-size(G)
+
+    for i-> 1 to V do
+       for all u in Adj[i] in G do
+         assign direction from u to i in G'
+        end for
+    end for     
+}

@@ -1,0 +1,37 @@
+The number of nodes are 14
+Case 1 - Graph is: 
+0 is connected to 1
+1 is connected to 0
+1 is connected to 2
+1 is connected to 13
+2 is connected to 1
+2 is connected to 3
+3 is connected to 2
+3 is connected to 4
+4 is connected to 3
+4 is connected to 5
+5 is connected to 4
+5 is connected to 6
+6 is connected to 7
+6 is connected to 5
+7 is connected to 6
+7 is connected to 8
+8 is connected to 7
+8 is connected to 9
+9 is connected to 8
+9 is connected to 10
+10 is connected to 9
+10 is connected to 11
+11 is connected to 10
+11 is connected to 12
+11 is connected to 13
+12 is connected to 11
+13 is connected to 11
+13 is connected to 1
+
+Below nodes are connected with single edge converting into One-way will not be feasible - 
+[0, 12]
+Graph has below bridges so converting into One-way will not be feasible
+0 - 1
+11 - 12
+Failed to assign direction to edges
